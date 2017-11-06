@@ -34,23 +34,24 @@
 	_i;
 
 	var i = 0;
-	var count = 0;
 	var fiveArray =[];
+	var amount = 10;
+	var step = 5;
 
-	while (count < 10) 
+	while (fiveArray.length < 10) {
 
-		{var calc = i % 5;
-
-		if (i % 5 ===0)
+		if (i % step ===0)
 	{
-		fiveArray.push(i);
-		count++;
+		//fiveArray.push(i);
+		
+		fiveArray[fiveArray.length] = i;
+	
 	}
 
 i++;
-
 }
 	console.log(fiveArray);
+
 
 </script>
 </html>
