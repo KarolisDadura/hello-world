@@ -36,7 +36,7 @@
 	var i = 0;
 	var fiveArray =[];
 	var amount = 10;
-	var step = 5;
+	var step = 15;
 
 	while (fiveArray.length < 10) {
 
@@ -45,10 +45,16 @@
 		//fiveArray.push(i);
 		
 		fiveArray[fiveArray.length] = i;
+
+		console.log(i, true);
 	
 	}
+	else
+	{
+		console.log(i, false);
+	}
 
-i++;
+i+=step;
 }
 	console.log(fiveArray);
 
