@@ -5,36 +5,45 @@
     <title>Hello JavaScript</title>
     <link rel="stylesheet"  href="css/app.css">
 </head>
-	<body>
 	
+<body>
 	<style type="text/css"></style>		
-
-
 </body>
+
 <script type="text/javascript">
 
-	/**
-	*komentarai sau
-	*test
-	*/
-
-	function squarenumber (number, level)
+	var _do= 
 	{
+		"user_id":1,
+		"0":156,
+		"name": "Karolis",
+		"address": 
+		{ 
+			"country":"lt",
+			"street":"laisves al.",
+			"house":1
+		}
+	};
+	var _da = ["lt", "en", "ru", "de", "pl", "lv","ee"];
 
-		console.log(number ** level);
-	
-	}
+	//incrementing
+	var _i = 0.15;
+	_i = _i + 1;
+	_i +=1;
+	_i++;
+	_i;
 
-	squarenumber(5, 3);
-
-	function doublenumber (number1, number2)
+	for (var i = 0; i < _da.length; ++i)
 	{
-
-		console.log(number1 + number2);
-	
+		console.log(i, _da[i]);
 	}
-
-	doublenumber(5, 8);
+	
+	_da.forEach(function(item){});
+	
+		for (var prop in _do)
+	{
+		console.log(prop, _do[prop]);
+	}
 
 </script>
 </html>
