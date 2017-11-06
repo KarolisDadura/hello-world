@@ -25,7 +25,7 @@
 
 function greetUser ()
 {
-	if(currentLaguageIndex ==="en")
+	/* if(currentLaguageIndex ==="en")
 	{
 		console.log("Hello world!");
 	}
@@ -36,7 +36,25 @@ function greetUser ()
 	else 
 	{
 		console.log ("...");
+	} */
+
+	var message = "...";
+
+	switch (currentLaguageIndex)
+	{
+		case "en":
+		message = "hello world!"
+			break;
+		case "lt":
+		message = "labas pasauli!"
+			break;
+		case "de":
+		message = "hallo welth!"
+			break;
 	}
+
+
+	console.log(message);
 
 }
 greetUser();
