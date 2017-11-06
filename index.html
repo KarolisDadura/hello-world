@@ -13,6 +13,11 @@
 <script type="text/javascript">
 
 	var languages =["en", "lt", "de","ee", "lv", "pl", "es", "fr","it", "ru"];
+	var translations = {
+		"lt": "labas pasauli";
+		"en": "hello world";
+		"de": "hallo welth";
+	};
 	var currentLaguageIndex = getLanguage();
 
 	function getLanguage()
@@ -39,6 +44,7 @@ function greetUser ()
 	} */
 
 	var message;
+	var callPolice = false;
 
 	switch (currentLaguageIndex)
 	{
@@ -50,6 +56,13 @@ function greetUser ()
 			break;
 		case "de":
 		message = "hallo welth!"
+			break;
+		case "ru":
+
+		callPolice = true;
+
+		case "lv":
+		message = "zdrastvuj mir!"
 			break;
 		default :
 
