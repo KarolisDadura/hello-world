@@ -12,60 +12,34 @@
 
 <script type="text/javascript">
 
-	var _do= 
+	var languages =["en", "lt", "de","ee", "lv", "pl", "es", "fr","it", "ru"];
+	var currentLaguageIndex = getLanguage();
+
+	function getLanguage()
+{
+	var date =new Date();
+		date = date.getSeconds() % 10;
+		date =languages[date];
+	return date;
+}	
+
+function greetUser ()
+{
+	if(currentLaguageIndex ==="en")
 	{
-		"user_id":1,
-		"0":156,
-		"name": "Karolis",
-		"address": 
-		{ 
-			"country":"lt",
-			"street":"laisves al.",
-			"house":1
-		}
-	};
-	var _da = ["lt", "en", "ru", "de", "pl", "lv","ee"];
-
-	//incrementing
-	var _i = 0.15;
-	_i = _i + 1;
-	_i +=1;
-	_i++;
-	_i;
-
-	var i = 0;
-	var fiveArray =[];
-	var amount = 10;
-	var step = 15;
-
-	while (fiveArray.length < 10) {
-
-		if (i % step ===0)
-	{
-		//fiveArray.push(i);
-		
-		fiveArray[fiveArray.length] = i;
-
-		console.log(i, true);
-	
+		console.log("Hello world!");
 	}
-	else
+	else if (currentLaguageIndex === "lt")
 	{
-		console.log(i, false);
+		console.log("labas pasauli!");
+	}
+	else 
+	{
+		console.log ("...");
 	}
 
-i++;
 }
-	
-	fiveArray = [];
-	i=0;
-
-	while (fiveArray.length < amount) {
-		fiveArray.push(i);
-		i+=step;
-	}
-
-console.log(fiveArray);
+greetUser();
 
 </script>
 </html>
