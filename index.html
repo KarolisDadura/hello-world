@@ -33,17 +33,24 @@
 	_i++;
 	_i;
 
-	for (var i = 0; i < _da.length; ++i)
+	var i = 0;
+	var count = 0;
+	var fiveArray =[];
+
+	while (count < 10) 
+
+		{var calc = i % 5;
+
+		if (i % 5 ===0)
 	{
-		console.log(i, _da[i]);
+		fiveArray.push(i);
+		count++;
 	}
-	
-	_da.forEach(function(item){});
-	
-		for (var prop in _do)
-	{
-		console.log(prop, _do[prop]);
-	}
+
+i++;
+
+}
+	console.log(fiveArray);
 
 </script>
 </html>
