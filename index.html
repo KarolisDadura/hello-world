@@ -54,10 +54,18 @@
 		console.log(i, false);
 	}
 
-i+=step;
+i++;
 }
-	console.log(fiveArray);
+	
+	fiveArray = [];
+	i=0;
 
+	while (fiveArray.length < amount) {
+		fiveArray.push(i);
+		i+=step;
+	}
+
+console.log(fiveArray);
 
 </script>
 </html>
