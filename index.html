@@ -13,10 +13,19 @@
 <script type="text/javascript">
 
 	var languages =["en", "lt", "de","ee", "lv", "pl", "es", "fr","it", "ru"];
-	var translations = {
-		"lt": "labas pasauli";
-		"en": "hello world";
-		"de": "hallo welth";
+	var translations = 
+	{
+		"en": "hello world",
+		"lt": "labas pasauli",
+		"de": "hallo welth",
+		"ee": "Tere Maailm",
+		"lv": "Sveika pasaule",
+		"pl": "Witaj świecie",
+		"es": "Hola Mundo",
+		"fr": "Bonjour le monde",
+		"it": "Ciao mondo",
+		"ru": "Привет мир",
+
 	};
 	var currentLaguageIndex = getLanguage();
 
@@ -30,7 +39,7 @@
 
 function greetUser ()
 {
-	/* if(currentLaguageIndex ==="en")
+	/*if(currentLaguageIndex ==="en")
 	{
 		console.log("Hello world!");
 	}
@@ -41,9 +50,9 @@ function greetUser ()
 	else 
 	{
 		console.log ("...");
-	} */
+	}*/
 
-	var message;
+	/*var message;
 	var callPolice = false;
 
 	switch (currentLaguageIndex)
@@ -70,7 +79,8 @@ function greetUser ()
 	}
 
 
-	console.log(message);
+	console.log(message);*/
+	console.log(translations.currentLaguageIndex)
 
 }
 greetUser();
