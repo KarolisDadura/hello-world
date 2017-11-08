@@ -55,9 +55,6 @@ function greetUser ()
 	*/
 
 	/*
-	var message;
-	var callPolice = false;
-
 	switch (currentLaguageIndex)
 	{
 		case "en":
@@ -69,22 +66,36 @@ function greetUser ()
 		case "de":
 		message = "hallo welth!"
 			break;
-		case "ru":
-
-		callPolice = true;
-
+		case "ee":
+		message = "hallo welth!"
+			break;
 		case "lv":
 		message = "zdrastvuj mir!"
 			break;
+		case "lv":
+		message = "zdrastvuj mir!"
+			break;
+		case "lv":
+		message = "zdrastvuj mir!"
+			break;
+		case "lv":
+		message = "zdrastvuj mir!"
+			break;
+		case "lv":
+		message = "zdrastvuj mir!"
+			break;
+		case "lv":
+		message = "zdrastvuj mir!"
+			break;
+		
 		default :
-
 			message = "...";
 	}
 
 
-	console.log(message);*/
-	console.log(translations.currentLaguageIndex);
-
+	console.log(message);
+	console.log(translations[currentLaguageIndex]);*/
+	console.log(translations[getLanguage()]);
 }
 greetUser();
 
